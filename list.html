@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作品ギャラリー - Fispace</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+      }
+
+      /* 顶部导航栏 */
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #000;
+        padding: 10px 40px;
+        border-bottom: 2px solid #cdf612;
+      }
+
+      header .logo {
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      header nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      header nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      header nav a:hover {
+        color: #cdf612;
+      }
+
+      /* 分类条 */
+      .category-bar {
+        background-color: #cdf612;
+        color: #000;
+        font-weight: bold;
+        padding: 10px 40px;
+        font-size: 16px;
+      }
+
+      /* 图片展示区 */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+        /* gap: 20px; */
+        padding: 40px;
+        background-color: #000;
+      }
+
+      .gallery-item {
+        background-color: #111;
+        overflow: hidden;
+        /* border-radius: 6px; */
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100px;
+        /* height: auto; */
+        display: block;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .gallery-item .info {
+        padding: 10px;
+      }
+
+      .gallery-item .title {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: #fff;
+      }
+
+      .gallery-item .desc {
+        font-size: 12px;
+        color: #888;
+      }
+
+      /* 页脚 */
+      footer {
+        text-align: center;
+        padding: 40px 0;
+        font-size: 12px;
+        color: #777;
+        background-color: #000;
+        border-top: 1px solid #222;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .gallery {
+          grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 顶部导航 -->
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img style="height: 36px" src="./images/logo.png" alt="logo" />
+        </a>
+      </div>
+      <nav>
+        <a href="/#home">フロントページ</a>
+        <a href="/#about">について</a>
+        <a href="/#services">社名</a>
+        <a href="/#works">仕事</a>
+        <a href="/#contact">連絡する</a>
+      </nav>
+    </header>
+
+    <!-- 分类条 -->
+    <div class="category-bar">カテゴリ</div>
+
+    <!-- 作品展示区 -->
+    <main class="gallery">
+      <!-- 示例图片项（可复制20次） -->
+      <div class="gallery-item">
+        <img src="./images/list/1.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/2.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/3.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/4.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/5.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/6.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/7.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/8.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/9.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/10.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/11.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/12.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/13.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/14.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/15.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/16.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/17.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/18.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/19.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/20.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/21.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/list/22.jpg" alt="作品画像" />
+        <div class="info">
+          <div class="title">商品のパッケージデザイン</div>
+          <div class="desc">グラフィック制作</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>© 2025 The Fispace Company. All rights reserved.</footer>
+  </body>
+</html>
